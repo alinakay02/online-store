@@ -5,9 +5,10 @@ body {
       "nav nav nav"
       "article article article"
       "footer footer footer";
-    grid-template-rows: 50px 40px 1fr 70px;  
+    grid-template-rows: 80px 40px 1fr 70px;  
     height: 100vh;
     margin: 0;
+    
     }  
 
 header {
@@ -16,23 +17,27 @@ header {
 .search {
   font-size: 15px;
   font-family: 'Courier New', Courier, monospace;
+  
+}
+a {
+  text-decoration: none;
 }
 nav {
-    background:rgb(205, 0, 195)
+    background: rgb(201, 63, 127);
 }
 article {
     background: rgb(255, 241, 241);
 }
 footer {
-    background: rgb(134, 28, 175);
+    background:  rgb(159, 45, 98);
 }
 /* Основные гриды */
 #pageHeader {
   grid-area: header;
   display: grid;
   grid-template-areas: 
-      "ic1 city logo ic2 ic3 ic4 ic5";
-  grid-template-columns: 40px 80px 1fr 1fr 40px 40px 40px;
+      "logo   ic2 ic3 ic4 ic5 ic1 city";
+  grid-template-columns: 2fr 1fr 50px 50px 50px 40px 80px;
   grid-gap: 5px;
   position: relative;
   }
@@ -41,8 +46,37 @@ footer {
   text-align: center;
   }
 #mainArticle { 
-  grid-area: article;      
+  grid-area: article; 
+  display: grid;     
+  grid-template-areas:
+  "banner"
+  "promos";
+  grid-template-rows: 400px 1fr;
+  grid-gap: 5px;
+  position: relative;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
   }
+
+.banner {
+  grid-area: banner;
+  border: 1px solid gray;
+  position: relative;
+}
+.banner>img {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  width: 40%;
+  height: 90%;
+}
+.promos {
+  grid-area: promos;
+  padding-left: 10%;
+  color:  rgb(201, 63, 127);
+  font-size: 30px;
+}
+
 #mainNav { 
   grid-area: nav; 
   display: grid;
@@ -51,6 +85,9 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 3px;
   position: relative;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(255, 240, 252);
   }
 
 /* Описание вложенных гридов для заголовка */
@@ -73,17 +110,22 @@ footer {
 }
 #logotip {
   grid-area: logo;
-  display: flex;
-  align-items: center;
-}
-#poisk{
-  grid-area: ic2;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 15%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
+#poisk{
+  grid-area: ic2;
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
 #korzina{
   grid-area: ic3;
   position: absolute;
@@ -110,7 +152,7 @@ footer {
 }
 
 /* Описание вложенных гридов для навигации */
-#katalog {
+.katalog {
   grid-area: catalog;
   position: absolute;
   top: 50%;
@@ -118,7 +160,7 @@ footer {
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
-#novinki {
+.novinki {
   grid-area: new;
   position: absolute;
   top: 50%;
@@ -126,7 +168,7 @@ footer {
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
-#aktsii {
+.aktsii {
   grid-area: promo;
   position: absolute;
   top: 50%;
@@ -134,7 +176,7 @@ footer {
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
-#magazini {
+.magazini {
   grid-area: magazines;
   position: absolute;
   top: 50%;
@@ -142,7 +184,7 @@ footer {
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
-#novosti {
+.novosti {
   grid-area: novost;
   position: absolute;
   top: 50%;
@@ -150,7 +192,7 @@ footer {
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
-#programloy {
+.programloy {
   grid-area: progloy;
   position: absolute;
   top: 50%;
@@ -158,4 +200,41 @@ footer {
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
-  
+
+/* Кнопка выпадающего меню*/
+.dropbtn {
+  background-color: rgb(201, 63, 127) ;
+  color: rgb(254, 236, 236);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Выпадающее содержимое */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 235, 254);
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+  float: none;
+  color:  rgb(201, 63, 127);
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffdaf2;
+  color: blueviolet;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -9,17 +9,13 @@
 </head>
 <body>
     <header id="pageHeader">
-        <div id="icon1">
-            <img src="icon1.png" alt="icon1" width="30px">
-        </div>
-        <div id="city">Москва</div>
         <div id="logotip">
-
+            <img src="logo.png" alt="logo" height="80px">
         </div>
         <div id="poisk">
             <form>
-                <p><input type="text" name=text" class="search" placeholder ="Поиск по сайту">
-                <input type="image" src="icon2.png" alt="OK"  width="15px"></p>
+                <input type="text" name=text" height="18px" class="search" placeholder ="Поиск по сайту">
+                <input type="image" src="icon2.png" alt="OK"  height="18px" class="search">
             </form>
         </div>
         <div id="korzina">
@@ -31,17 +27,87 @@
         <div id="profile">
             <img src="icon5.png" alt="icon5" width="25px">
         </div>
+        <div id="icon1">
+            <img src="icon1.png" alt="icon1" width="30px">
+        </div>
+        <div id="city">Москва</div>
+        
     </header>
+
+    <article id="mainArticle">
+        <div class="banner">
+            <img src="pic8.jpg" alt="glav_foto" >
+        </div>
+        <div class="promos">
+            <p>Рекомендуемые товары</p>
+        </div>
+    </article>
+
     <nav id="mainNav">
-        <div id="katalog">Каталог</div>
-        <div id="novinki">Новинки</div>
-        <div id="aktsii">Акции</div>
-        <div id="magazini">Магазины</div>
-        <div id="novosti">Новости</div>
-        <div id="programloy">Программа лояльности</div>
+        <div class="katalog">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Каталог</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Ссылка 1</a>
+                  <a href="#">Ссылка 2</a>
+                  <a href="#">Ссылка 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="novinki">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Новинки</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Ссылка 4</a>
+                  <a href="#">Ссылка 5</a>
+                  <a href="#">Ссылка 6</a>
+                </div>
+            </div>
+        </div>
+        <div class="aktsii">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Акции</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Ссылка 7</a>
+                  <a href="#">Ссылка 8</a>
+                  <a href="#">Ссылка 9</a>
+                </div>
+            </div>
+        </div>
+        <div class="magazini">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Магазины</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Ссылка 10</a>
+                  <a href="#">Ссылка 11</a>
+                  <a href="#">Ссылка 12</a>
+                </div>
+            </div>
+        </div>
+        <div class="novosti">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Новости</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Ссылка 13</a>
+                  <a href="#">Ссылка 14</a>
+                  <a href="#">Ссылка 15</a>
+                </div>
+            </div>
+        </div>
+        <div class="programloy">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Программа лояльности</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Ссылка 16</a>
+                  <a href="#">Ссылка 17</a>
+                  <a href="#">Ссылка 18</a>
+                </div>
+            </div>
+        </div>
     </nav>
-    <article id="mainArticle">Содержимое сайта</article>
+    
     
     <footer id="pageFooter">Инф-я</footer>
+
 </body>
 </html>
