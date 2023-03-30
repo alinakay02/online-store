@@ -1,0 +1,11 @@
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: rgb(159, 45, 98);;
+    text-align: center;
+    
+}
+
+.article {
+    grid-area: article;
+}

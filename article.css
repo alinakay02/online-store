@@ -1,0 +1,30 @@
+article {
+    background: rgb(255, 241, 241);
+}
+#mainArticle { 
+    grid-area: article; 
+    display: grid;     
+    grid-template-areas:
+    "banner"
+    "promos";
+    grid-template-rows: 600px 1fr;
+    grid-gap: 5px;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.promos {
+    grid-area: promos;
+    padding-left: 10%;
+    color:  rgb(201, 63, 127);
+    font-size: 30px;
+}
+
+.carousel-item {
+    display: flex;
+    padding: 0%;
+    max-width: 60%;
+    left: 35%;
+    margin-right: -50%;
+}

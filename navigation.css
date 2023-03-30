@@ -1,0 +1,108 @@
+#mainNav { 
+    grid-area: nav; 
+    display: grid;
+    grid-template-areas: 
+        "catalog new promo magazines novost progloy";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 240, 252);
+}
+
+nav {
+    background: rgb(201, 63, 127);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Описание вложенных гридов для навигации */
+.katalog {
+    grid-area: catalog;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.novinki {
+    grid-area: new;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.aktsii {
+    grid-area: promo;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.magazini {
+    grid-area: magazines;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.novosti {
+    grid-area: novost;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.programloy {
+    grid-area: progloy;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Кнопка выпадающего меню*/
+.dropbtn {
+    background-color: rgb(201, 63, 127) ;
+    color: rgb(254, 236, 236);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Выпадающее содержимое */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 235, 254);
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    float: none;
+    color:  rgb(201, 63, 127);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffdaf2;
+    color: blueviolet;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
