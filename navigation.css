@@ -9,6 +9,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: rgb(255, 240, 252);
+    padding-left: 7%;
 }
 
 nav {
@@ -24,59 +25,48 @@ a {
     grid-area: catalog;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(0, -50%)
 }
 .novinki {
     grid-area: new;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(0, -50%)
 }
 .aktsii {
     grid-area: promo;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(0, -50%)
 }
 .magazini {
     grid-area: magazines;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(0, -50%)
 }
 .novosti {
     grid-area: novost;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(0, -50%)
 }
 .programloy {
     grid-area: progloy;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(0, -50%)
 }
 
 /* Кнопка выпадающего меню*/
 .dropbtn {
     background-color: rgb(201, 63, 127) ;
     color: rgb(254, 236, 236);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', serif;
     font-size: 20px;
     border: none;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 /* Выпадающее содержимое */
@@ -84,7 +74,7 @@ a {
     display: none;
     position: absolute;
     background-color: rgb(255, 235, 254);
-    min-width: 250px;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -105,4 +95,6 @@ a {
 }
 .dropdown:hover .dropdown-content {
     display: block;
+    background-color: rgb(254, 236, 236);
+    color: rgb(201, 63, 127);
 }

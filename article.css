@@ -3,28 +3,91 @@ article {
 }
 #mainArticle { 
     grid-area: article; 
-    display: grid;     
-    grid-template-areas:
-    "banner"
-    "promos";
-    grid-template-rows: 600px 1fr;
-    grid-gap: 5px;
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
 
 .promos {
-    grid-area: promos;
-    padding-left: 10%;
     color:  rgb(201, 63, 127);
-    font-size: 30px;
+    text-align: center;
+    padding-bottom: 70px;
 }
 
-.carousel-item {
+.products_wrapper {
+    margin-bottom: 40px;
+    margin-top: 40px;
     display: flex;
-    padding: 0%;
-    max-width: 60%;
-    left: 35%;
-    margin-right: -50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+.product_link {
+    display: inline-block;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in;
+}
+.product_link:hover {
+    opacity: 0.8;
+}
+.product {
+    text-align: center;
+    max-width: 280px;
+}
+.product_img {
+    display: block;
+    max-width: 300px;
+}
+.product_title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 27px;
+    text-align: center;
+    color: black;
+}
+.product_price{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: rgb(215, 0, 0);
+}
+
+.recommend > p {
+    padding-top: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center
+}
+
+/* button to go */
+.button_go {
+    display: inline-block;
+    padding: 9px 40px 12px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(215, 0, 0);
+    border-radius: 4px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.button_go:hover {
+    background-color: rgb(215, 0, 0);
+    color: white;
+}
+.product_button > a {
+    text-decoration: none;
+    color: rgb(175, 0, 0);
 }

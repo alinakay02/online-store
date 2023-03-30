@@ -12,8 +12,8 @@ header {
     grid-area: header;
     display: grid;
     grid-template-areas: 
-        "logo   ic2 ic3 ic4 ic5 ic1 city";
-    grid-template-columns: 2fr 1fr 50px 50px 50px 40px 80px;
+        "logo  contacts ic2 ic3 ic4 ic5 ic1 city";
+    grid-template-columns: 2fr 1fr 1fr 50px 50px 50px 40px 80px;
     grid-gap: 5px;
     position: relative;
 }
@@ -44,7 +44,26 @@ header {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-#poisk{
+#contacts {
+    grid-area: contacts;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20px;
+    top: 50%;
+    left: 25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.num > span {
+    margin: 0;
+    color: rgb(201, 63, 127);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+}
+#poisk {
     grid-area: ic2;
     display: inline;
     position: absolute;
