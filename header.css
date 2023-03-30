@@ -47,28 +47,26 @@ header {
 #contacts {
     grid-area: contacts;
     position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 20px;
     top: 50%;
-    left: 25%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
-.num > span {
-    margin: 0;
+    left: 40%;
+    transform: translate(0, -50%);
     color: rgb(201, 63, 127);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     line-height: 25px;
 }
+#contacts img {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
 #poisk {
     grid-area: ic2;
     display: inline;
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 40%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
