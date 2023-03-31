@@ -1,7 +1,5 @@
 .article {
     grid-area: article;
-    padding-left: 5%;
-    padding-right: 5%;
     padding-bottom: 50px;
     background-color: rgb(255, 241, 241);
 }
@@ -9,14 +7,19 @@
     display: grid;
     grid-template-areas: 
       "profile_logo inform";
-      grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
+    
 }
 .left_form {
     grid-area: profile_logo;
     padding-left: 20%;
+    align-self: center;
+    justify-self: center;
 }
 .right_info {
     grid-area: inform;
+    align-self: center;
+    justify-self: center;
 }
 
 /* правый грид*/
