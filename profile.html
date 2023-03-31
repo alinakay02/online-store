@@ -1,56 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="navigation.css">
-    <link rel="stylesheet" type="text/css" href="basket.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="profile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корзина</title>
+    <title>Flower shop</title>
 </head>
 <body>
-    <header id="pageHeader">
-        <div id="logotip">
-            <a href="index.html">
-                <img src="logo.png" alt="logo" height="80px">
-            </a>
-        </div>
-        <div id="poisk">
-            <form>
-                <input type="text" name=text" height="18px" class="search" placeholder ="Поиск по сайту">
-                <input type="image" src="icon2.png" alt="OK"  height="18px" class="search">
-            </form>
-        </div>
-        <div id="korzina">
-            <a href="basket.html"><img src="icon3.png" alt="icon3" width="25px"></a>
-        </div>
-        <div id="izbr">
-            <a href="liked.html"><img src="icon4.png" alt="icon4" width="25px"></a>
-        </div>
-        <div id="profile">
-            <a href="profile.html"><img src="icon5.png" alt="icon5" width="25px"></a>
-        </div>
-        <div id="icon1">
-            <img src="icon1.png" alt="icon1" width="30px">
-        </div>
-        <div id="city">Москва</div>
+<!--Заголовок -->
+<header id="pageHeader">
+    <div id="logotip">
+        <a href="index.html">
+        <img src="logo.png" alt="logo" height="80px">
+        </a>
+    </div>
+    <div id="contacts">
+        <img src="icon0.png" alt="telephone" height="20px">
+        +78009110011
+    </div>
+    <div id="poisk">
+        <form class="form_poisk">
+            <input type="text" name=text" height="15px" class="search" placeholder ="Поиск по сайту">
+            <input type="image" src="icon2.png" alt="OK"  height="18px" class="search">
+        </form>
+    </div>
+    <div id="korzina">
+        <a href="basket.html"><img src="icon3.png" alt="icon3" width="25px"></a>
+    </div>
+    <div id="izbr">
+        <a href="liked.html"><img src="icon4.png" alt="icon4" width="25px"></a>
+    </div>
+    <div id="profile">
+        <a href="profile.html"><img src="icon5.png" alt="icon5" width="25px"></a>
+    </div>
+    <div id="icon1">
+        <img src="icon1.png" alt="icon1" width="30px">
+    </div>
+    <div id="city">Москва</div>
+    
+</header>
+<!--//Заголовок -->
+
+<!--Тело страницы -->
+    <article class="article">
+        <div class="grid">
+            <div class="left_form">
+                <div class="table_inform">
+                    <table>
+                        <a href="#">
+                            <tr>
+                                <td>Вход/регистрация</td>
+                            </tr>
+                        </a>
+                        
+                        <a href="#">
+                            <tr>
+                                <td>Настройки аккаунта</td>
+                            </tr>
+                        </a>
+                        
+                        <a href="#">
+                            <tr>
+                                <td>Адрес доставки</td>
+                            </tr>
+                        </a>
+                        
+                        <a href="#">
+                            <tr>
+                                <td>Заказы</td>
+                            </tr>
+                        </a>
+                    </table>
+                </div>
+            </div>
+
+            <div class="right_info">
+                <div class="page_name">
+                    <p>Личный профиль</p>
+                </div>
+                <div class="photo_name">
+                    <div class="photo">
+                        <img src="icons/icon_profile.png" alt="photo" width="180px">
+                    </div>
+                    <div class="name">
+                        <p>Имя Фамилия</p>
+                    </div>
+                    <div class="phone">
+                        <p>+79004004040</p>
+                    </div>
+                </div>
+                
         
-    </header>
+            </div>
+        </div>
+        
 
-    <article class="basket">
-        <p>Личный профиль</p>
+
     </article>
+<!--//Тело страницы  -->
 
+<!--Навигация -->
     <nav id="mainNav">
         <div class="katalog">
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Каталог</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 1</a>
-                  <a href="#">Ссылка 2</a>
-                  <a href="#">Ссылка 3</a>
+                  <a href="#">Все</a>
+                  <a href="#">Сезонные букеты</a>
+                  <a href="#">Домашние растения</a>
                 </div>
             </div>
         </div>
@@ -58,9 +119,8 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Новинки</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 4</a>
-                  <a href="#">Ссылка 5</a>
-                  <a href="#">Ссылка 6</a>
+                  <a href="#">Новое поступление цветов</a>
+                  <a href="#">Сборные композиции</a>
                 </div>
             </div>
         </div>
@@ -68,9 +128,8 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Акции</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 7</a>
-                  <a href="#">Ссылка 8</a>
-                  <a href="#">Ссылка 9</a>
+                  <a href="#">Скидка на второй букет</a>
+                  <a href="#">Акционные товары</a>
                 </div>
             </div>
         </div>
@@ -78,9 +137,9 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Магазины</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 10</a>
-                  <a href="#">Ссылка 11</a>
-                  <a href="#">Ссылка 12</a>
+                  <a href="#">ул. Красногвардейская 14</a>
+                  <a href="#">ул. Сущевский вал стр20А</a>
+                  <a href="#">ул. Ладожская 5</a>
                 </div>
             </div>
         </div>
@@ -88,9 +147,9 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Новости</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 13</a>
-                  <a href="#">Ссылка 14</a>
-                  <a href="#">Ссылка 15</a>
+                  <a href="#">Предварительный заказ</a>
+                  <a href="#">Как правильно ухаживать за цветами</a>
+                  <a href="#">Новый график работы магазинов</a>
                 </div>
             </div>
         </div>
@@ -98,15 +157,16 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Программа лояльности</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 16</a>
-                  <a href="#">Ссылка 17</a>
-                  <a href="#">Ссылка 18</a>
+                  <a href="#">О программе</a>
+                  <a href="#">Как стать участником</a>
+                  <a href="#">Привилегии для участников</a>
                 </div>
             </div>
         </div>
     </nav>
-     
-    <footer id="pageFooter">Инф-я</footer>
+<!--//Навигация -->
     
+    <footer id="pageFooter">Инф-я</footer>
+
 </body>
 </html>

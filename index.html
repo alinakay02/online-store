@@ -7,11 +7,11 @@
     <link rel="stylesheet" type="text/css" href="article.css">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="navigation.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower shop</title>
 </head>
 <body>
+<!--Заголовок -->
     <header id="pageHeader">
         <div id="logotip">
             <a href="index.html">
@@ -23,8 +23,8 @@
             +78009110011
         </div>
         <div id="poisk">
-            <form>
-                <input type="text" name=text" height="18px" class="search" placeholder ="Поиск по сайту">
+            <form class="form_poisk">
+                <input type="text" name=text" height="15px" class="search" placeholder ="Поиск по сайту">
                 <input type="image" src="icon2.png" alt="OK"  height="18px" class="search">
             </form>
         </div>
@@ -43,13 +43,17 @@
         <div id="city">Москва</div>
         
     </header>
+<!--//Заголовок -->
 
+<!--Тело страницы -->
     <article id="mainArticle">
+        <!-- блок рекламы - в разработке-->
         <section class="banner">
 
         </section>
-        
-        
+        <!-- блок рекламы - в разработке-->
+
+        <!-- блок "рекомендуемые товары"-->
         <section class="promos">
             <div class="recommend">
                 <p>Рекомендуемые товары</p>
@@ -152,18 +156,20 @@
                     </a>
                 </div>
             </div>
-
         </section>
+        <!-- //блок "рекомендуемые товары"-->
     </article>
+<!--//Тело страницы  -->
 
+<!--Навигация -->
     <nav id="mainNav">
         <div class="katalog">
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Каталог</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 1</a>
-                  <a href="#">Ссылка 2</a>
-                  <a href="#">Ссылка 3</a>
+                  <a href="#">Все</a>
+                  <a href="#">Сезонные букеты</a>
+                  <a href="#">Домашние растения</a>
                 </div>
             </div>
         </div>
@@ -171,9 +177,8 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Новинки</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 4</a>
-                  <a href="#">Ссылка 5</a>
-                  <a href="#">Ссылка 6</a>
+                  <a href="#">Новое поступление цветов</a>
+                  <a href="#">Сборные композиции</a>
                 </div>
             </div>
         </div>
@@ -181,9 +186,8 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Акции</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 7</a>
-                  <a href="#">Ссылка 8</a>
-                  <a href="#">Ссылка 9</a>
+                  <a href="#">Скидка на второй букет</a>
+                  <a href="#">Акционные товары</a>
                 </div>
             </div>
         </div>
@@ -191,9 +195,9 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Магазины</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 10</a>
-                  <a href="#">Ссылка 11</a>
-                  <a href="#">Ссылка 12</a>
+                  <a href="#">ул. Красногвардейская 14</a>
+                  <a href="#">ул. Сущевский вал стр20А</a>
+                  <a href="#">ул. Ладожская 5</a>
                 </div>
             </div>
         </div>
@@ -201,9 +205,9 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Новости</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 13</a>
-                  <a href="#">Ссылка 14</a>
-                  <a href="#">Ссылка 15</a>
+                  <a href="#">Предварительный заказ</a>
+                  <a href="#">Как правильно ухаживать за цветами</a>
+                  <a href="#">Новый график работы магазинов</a>
                 </div>
             </div>
         </div>
@@ -211,17 +215,16 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Программа лояльности</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Ссылка 16</a>
-                  <a href="#">Ссылка 17</a>
-                  <a href="#">Ссылка 18</a>
+                  <a href="#">О программе</a>
+                  <a href="#">Как стать участником</a>
+                  <a href="#">Привилегии для участников</a>
                 </div>
             </div>
         </div>
     </nav>
-    
+<!--//Навигация -->
     
     <footer id="pageFooter">Инф-я</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>

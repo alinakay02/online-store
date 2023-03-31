@@ -1,22 +1,25 @@
-header {
-    background: white;
-}
-
-.search {
-  font-size: 15px;
-  font-family: 'Courier New', Courier, monospace;
-  
-}
-
 #pageHeader {
     grid-area: header;
     display: grid;
     grid-template-areas: 
         "logo  contacts ic2 ic3 ic4 ic5 ic1 city";
-    grid-template-columns: 2fr 1fr 1fr 50px 50px 50px 40px 80px;
+    grid-template-columns: 1fr 300px 300px 50px 50px 50px 40px 80px;
     grid-gap: 5px;
     position: relative;
+    padding-left: 4%;
+    padding-right: 4%;
 }
+
+header {
+    background: white;
+}
+
+.search {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 5px;
+}
+
 
 /* Описание вложенных гридов для заголовка */
 #icon1 {
@@ -40,9 +43,9 @@ header {
     grid-area: logo;
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 0%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(0%, -50%)
 }
 #contacts {
     grid-area: contacts;

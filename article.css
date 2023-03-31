@@ -6,6 +6,8 @@ article {
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .promos {
