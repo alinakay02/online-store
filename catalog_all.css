@@ -1,0 +1,74 @@
+article {
+    background: rgb(255, 241, 241);
+}
+#mainArticle { 
+    grid-area: article; 
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container {
+    color:  rgb(201, 63, 127);
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.products_wrapper {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 80px;
+}
+.product_link {
+    display: inline-block;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in;
+}
+.product_link:hover {
+    opacity: 0.8;
+}
+.product {
+    text-align: center;
+    max-width: 280px;
+}
+.product_img {
+    display: block;
+    max-width: 300px;
+}
+.product_title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 27px;
+    text-align: center;
+    color: black;
+}
+.product_price{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: rgb(215, 0, 0);
+}
+
+.page_name > p {
+    padding-top: 40px;
+    font-family: 'Franklin Gothic Medium', serif;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: rgb(201, 63, 127);
+}

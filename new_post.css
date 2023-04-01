@@ -1,0 +1,26 @@
+article {
+    background: rgb(255, 241, 241);
+}
+#mainArticle { 
+    grid-area: article; 
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container {
+    color:  rgb(201, 63, 127);
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.page_name > p {
+    padding-top: 40px;
+    font-family: 'Franklin Gothic Medium', serif;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: rgb(201, 63, 127);
+}

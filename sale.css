@@ -1,0 +1,38 @@
+article {
+    background: rgb(255, 241, 241);
+}
+#mainArticle { 
+    grid-area: article; 
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container {
+    color:  rgb(201, 63, 127);
+    text-align: left;
+    padding-bottom: 70px;
+}
+
+.page_name > p {
+    padding-top: 30px;
+    font-family: 'Franklin Gothic Medium', serif;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: rgb(201, 63, 127);
+}
+.promo {
+    color: rgb(201, 63, 127);
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 20px;
+    text-indent: 40px;
+}
+.zagolovok{
+    color: crimson;
+    font-weight: bold;
+    font-size: 30px;
+    text-indent: 0;
+}

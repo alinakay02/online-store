@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="aboutprog.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower shop</title>
+</head>
+<body>
+<!--Заголовок -->
+    <header id="pageHeader">
+        <div id="logotip">
+            <a href="index.html">
+            <img src="icons/logo.png" alt="logo" height="80px">
+            </a>
+        </div>
+        <div id="contacts">
+            <img src="icons/icon0.png" alt="telephone" height="20px">
+            +78009110011
+        </div>
+        <div id="poisk">
+            <form class="form_poisk">
+                <input type="text" name=text" height="15px" class="search" placeholder ="Поиск по сайту">
+                <input type="image" src="icons/icon2.png" alt="OK"  height="18px" class="search">
+            </form>
+        </div>
+        <div id="korzina">
+            <a href="basket.html"><img src="icons/icon3.png" alt="icon3" width="25px"></a>
+        </div>
+        <div id="izbr">
+            <a href="liked.html"><img src="icons/icon4.png" alt="icon4" width="25px"></a>
+        </div>
+        <div id="profile">
+            <a href="profile.html"><img src="icons/icon5.png" alt="icon5" width="25px"></a>
+        </div>
+        <div id="icon1">
+            <img src="icons/icon1.png" alt="icon1" width="30px">
+        </div>
+        <div id="city">Москва</div>
+        
+    </header>
+<!--//Заголовок -->
+
+<!--Тело страницы -->
+    <article id="mainArticle">
+        <div class="page_name">
+            <p>Программа лояльности</p>
+        </div>
+        <div class="container">
+            <div class="spisok">
+                <ul>
+                    <li>
+                        <a href="#about">О программе</a> 
+                    </li>
+                    <li>
+                        <a href="#addto">Как стать участником</a> 
+                    </li>
+                    <li>
+                        <a href="#privilegies">Привилегии для участников</a> 
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="programm">
+                <p id="about">О программе</p>
+                <p>
+                    Программа лояльности ООО "ФЛОВЕР ШОП" позволяет постоянным клиентам нашего магазина осуществлять выгодные приятные покупки. Система разработана с учетом общей суммы покупок за весь период. Чем выше общая сумма покупок, тем выше скидка и есть дополнительные привилегии. Всего есть 3 уровня привилегий:
+                    <ul>
+                        <li>Бронзовая карта</li>
+                        <li>Серебрянная карта</li>
+                        <li>Золотая карта</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="programm">
+                <p id="addto">Как стать участником</p>
+                <p>
+                    Для того чтобы стать участником программы необходимо создать профиль клиента, и осуществлять покупки с использованием своего идентификатора (номер телефона, штрихкод пользователя). При достижении суммы покупок 5000 рублей пользователям присваивается "Бронзовая карта". С повышением суммы покупок уровень повышается.
+                </p>
+            </div>
+            <div class="programm">
+                <p id="privilegies">Привилегии для участников</p>
+                <p>
+                    <ul>
+                        <li>Бронзовая карта</li>
+                        <p>
+                            Сумма покупок от 5000 рублей. Привилегии:
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </p>
+                        <li>Серебрянная карта</li>
+                        <p>
+                            Сумма покупок от 15000 рублей. Привилегии:
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </p>
+                        <li>Золотая карта</li>
+                        <p>
+                            Сумма покупок от 30000 рублей. Привилегии:
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </p>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </article>
+<!--//Тело страницы  -->
+
+<!--Навигация -->
+<nav id="mainNav">
+    <div class="katalog">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Каталог</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="catalog_all.html">Все</a>
+              <a href="catalog_sezon.html">Сезонные букеты</a>
+              <a href="catalog_dom.html">Комнатные растения</a>
+            </div>
+        </div>
+    </div>
+    <div class="novinki">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Новинки</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="new_post.html">Новое поступление цветов</a>
+              <a href="composition.html">Сборные композиции</a>
+            </div>
+        </div>
+    </div>
+    <div class="aktsii">
+        <div class="dropdown">
+            <button onclick="document.location='sale.html'" class="dropbtn">Акции</button>
+        </div>
+    </div>
+    <div class="magazini">
+        <div class="dropdown">
+            <button onclick="document.location='magazines.html'" class="dropbtn">Магазины</button>
+        </div>
+    </div>
+    <div class="novosti">
+        <div class="dropdown">
+            <button onclick="document.location='news.html'" class="dropbtn">Новости</button>
+        </div>
+    </div>
+    <div class="programloy">
+        <div class="dropdown">
+            <button onclick="document.location='aboutprog.html'" class="dropbtn">Программа лояльности</button>
+        </div>
+    </div>
+</nav>
+<!--//Навигация -->
+
+<footer id="pageFooter">
+    <p>FLOWER SHOP</p> 
+    <p>2023</p>
+</footer>
+
+</body>
+</html>

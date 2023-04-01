@@ -1,0 +1,68 @@
+article {
+    background: rgb(255, 241, 241);
+}
+#mainArticle { 
+    grid-area: article; 
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container {
+    color:  rgb(201, 63, 127);
+    text-align: left;
+    padding-bottom: 70px;
+}
+
+.page_name > p {
+    padding-top: 30px;
+    font-family: 'Franklin Gothic Medium', serif;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: rgb(201, 63, 127);
+}
+.zagolovok{
+    color: crimson;
+    font-weight: bold;
+    font-size: 30px;
+    text-indent: 0;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: darkmagenta;
+}
+a:hover {
+    color: rgb(255, 162, 206);
+}
+a:active {
+    color: rgb(128, 24, 72);
+}
+.spisok > ul {
+    margin-left: 20px;
+    padding: 0;
+}
+li {
+    margin-bottom: 1.5em;
+}
+#about {
+    font-size: 30px;
+    color: crimson;
+}
+#addto {
+    font-size: 30px;
+    color: crimson;
+}
+#privilegies {
+    font-size: 30px;
+    color: crimson;
+}
+.spisok {
+    color: darkmagenta;
+    font-size: 25px;
+   
+}
