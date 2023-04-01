@@ -11,3 +11,30 @@
     color: rgb(159, 45, 98);
     text-align: center;
 }
+table {
+    color: crimson;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+    margin-left: 100px;
+}
+
+td {
+    padding: 20px;
+    vertical-align: top;
+}
+td > p {
+    margin: 0;
+    padding-left: 40px;
+}
+.shop_info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+}
+
+img:hover {
+    opacity: 0.8;
+}

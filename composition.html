@@ -50,8 +50,54 @@
         <div class="page_name">
             <p>Сборные композиции</p>
         </div>
-        <div class="container">
-            
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="catalog/pic23.jpg" style="width:100%">
+              <div class="text">Blue lagoon</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="catalog/pic24.jpg" style="width:100%">
+              <div class="text">Sweetheart</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="catalog/pic25.jpg" style="width:100%">
+              <div class="text">Summer mood</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="catalog/pic26.jpg" style="width:100%">
+                <div class="text">Royal favor</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="catalog/pic28.jpg" style="width:100%">
+                <div class="text">Pink cloud</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="catalog/pic29.jpg" style="width:100%">
+                <div class="text">Autumn mood </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="catalog/pic30.jpg" style="width:100%">
+                <div class="text">Marshmallow </div>
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
         </div>
     </article>
 <!--//Тело страницы  -->
@@ -105,5 +151,33 @@
     <p>2023</p>
 </footer>
 
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 </body>
 </html>
