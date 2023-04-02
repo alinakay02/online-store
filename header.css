@@ -3,7 +3,7 @@
     display: grid;
     grid-template-areas: 
         "logo  contacts ic2 ic3 ic4 ic5 ic1 city";
-    grid-template-columns: 26vw 21vw 21vw 4vw 4vw 4vw 4vw 8vw;
+    grid-template-columns: 1fr 300px 300px 50px 50px 50px 40px 80px;
     position: relative;
     padding-left: 4vw;
     padding-right: 4vw;

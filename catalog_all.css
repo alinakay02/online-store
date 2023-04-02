@@ -37,7 +37,7 @@ article {
 }
 .product {
     text-align: center;
-    max-width: 280px;
+    max-width: 300px;
 }
 .product_img {
     display: block;
@@ -71,4 +71,29 @@ article {
     line-height: 35px;
     text-align: center;
     color: rgb(201, 63, 127);
+}
+
+/*buttons*/
+.buttons {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttons > .buy {
+    background-color: crimson;
+    border-radius: 10px;
+    border: 0;
+    width: 140px;
+}
+.buttons > .buy > p{
+    color: aliceblue;
+}
+.buttons > .add_to_cart {
+    background-color: rgb(192, 134, 255);
+    border-radius: 10px;
+    border: 0;
+    width: 140px;
+}
+.buttons > .add_to_cart > p{
+    color: white;
 }
