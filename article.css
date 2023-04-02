@@ -37,7 +37,7 @@ article {
 }
 .product {
     text-align: center;
-    max-width: 280px;
+    max-width: 300px;
 }
 .product_img {
     display: block;
@@ -95,4 +95,89 @@ article {
 .product_button > a {
     text-decoration: none;
     color: rgb(175, 0, 0);
+}
+
+/* рекламный баннер вверху страницы*/
+.banner {
+    width: 70vw;
+    height: 450px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 0;
+}
+.section {
+	position: relative;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	text-align: center;
+	flex: 1;
+    background-repeat: no-repeat; 
+    background-size: cover;
+	background-position: center;
+    transition: all 0.2s;
+}
+
+.cont_desc {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 60%;
+	height: auto;
+	margin: auto;
+    opacity: 0;
+	padding-top: 30px;
+}
+
+.cont_desc p {
+	margin: 0;
+	font-size: 30px;
+    color: white;
+}
+
+.section:hover {
+	flex-grow: 1.8;
+	transition: flex 0.4s;
+}
+
+.section:hover > .cont_desc > a {
+	opacity: 1;
+	transition-delay: 0.5s;
+	transition: opacity 0.8s; 
+} 
+.section:hover > .cont_desc{
+	opacity: 1;
+	transition-delay: 0.5s;
+	transition: opacity 0.8s; 
+}
+.section:nth-child(1) {
+	background-image: url("catalog/pic27.jpg");
+}
+
+.section:nth-child(2) {
+	background-image: url("catalog/pic21.jpg");
+}
+
+.section:nth-child(3) {
+	background-image: url("catalog/pic26.jpg");
+}
+
+.section:nth-child(4) {
+	background-image: url("catalog/pic15.jpg");
+}
+
+.section:nth-child(5) {
+	background-image: url("catalog/pic16.jpg");
+}
+
+.banner:hover > .section {
+    filter: brightness(60%);
+}
+.banner:hover > .section:hover {
+    filter: brightness(100%);
 }
